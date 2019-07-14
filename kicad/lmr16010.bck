@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LMR16010
+D LMR16010 SIMPLE SWITCHER® 60 V, 1 A Step-Down Converter With 40 μA IQ
+K SIMPLE SWITCHER BUCK STEP DOWN
+F http://www.ti.com/lit/ds/symlink/lmr16010.pdf
+$ENDCMP
+#
+#End Doc Library

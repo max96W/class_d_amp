@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TL431
+D TL431 Shunt Regulator
+K Shunt Regulator
+$ENDCMP
+#
+#End Doc Library

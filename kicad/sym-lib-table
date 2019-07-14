@@ -1,0 +1,13 @@
+(sym_lib_table
+  (lib (name classD_0_6-rescue)(type Legacy)(uri ${KIPRJMOD}/classD_0_6-rescue.lib)(options "")(descr ""))
+  (lib (name tlv3502)(type Legacy)(uri ${KIPRJMOD}/tlv3502.lib)(options "")(descr ""))
+  (lib (name lt6118)(type Legacy)(uri ${KIPRJMOD}/lt6118.lib)(options "")(descr ""))
+  (lib (name SN74LVC2G04)(type Legacy)(uri ${KIPRJMOD}/SN74LVC2G04.lib)(options "")(descr ""))
+  (lib (name SN74LVC2G86)(type Legacy)(uri ${KIPRJMOD}/SN74LVC2G86.lib)(options "")(descr ""))
+  (lib (name UCC27211)(type Legacy)(uri ${KIPRJMOD}/UCC27211.lib)(options "")(descr ""))
+  (lib (name 74hct10)(type Legacy)(uri ${KIPRJMOD}/74hct10.lib)(options "")(descr ""))
+  (lib (name irfb4020)(type Legacy)(uri ${KIPRJMOD}/irfb4020.lib)(options "")(descr ""))
+  (lib (name lmr16010)(type Legacy)(uri ${KIPRJMOD}/lmr16010.lib)(options "")(descr ""))
+  (lib (name TL431)(type Legacy)(uri ${KIPRJMOD}/TL431.lib)(options "")(descr ""))
+  (lib (name classD-rescue)(type Legacy)(uri ${KIPRJMOD}/classD-rescue.lib)(options "")(descr ""))
+)

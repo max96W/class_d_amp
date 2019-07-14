@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SN74LVCG04
+D Hex Inverter
+K TTL not inv
+F http://www.ti.com/lit/ds/symlink/sn74lvc2g04.pdf
+$ENDCMP
+#
+#End Doc Library

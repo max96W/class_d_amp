@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74HCT10
+D Triple Nand3
+K TTL Nand3
+F https://assets.nexperia.com/documents/data-sheet/74HC_HCT10_Q100.pdf
+$ENDCMP
+#
+#End Doc Library

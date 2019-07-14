@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP UCC27211
+D 4A, 120V Boot Half-Bridge Driver
+K MOSFET Driver
+F http://www.ti.com/lit/ds/symlink/ucc27211.pdf
+$ENDCMP
+#
+#End Doc Library

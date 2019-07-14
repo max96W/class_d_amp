@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TLV3502
+D 4.5-ns, Rail-to-Rail, High-Speed Comparator in Microsize Packages
+K dual comparator
+F http://www.ti.com/lit/ds/symlink/tlv3502.pdf
+$ENDCMP
+#
+#End Doc Library

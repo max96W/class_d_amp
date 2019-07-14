@@ -1,0 +1,495 @@
+EESchema Schematic File Version 4
+LIBS:classD-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 7
+Title "Class D amplifier"
+Date "2019-07-14"
+Rev "1.0"
+Comp "Max Wulf"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L UCC27211:UCC27211 U7
+U 1 1 5BE300E8
+P 4520 3280
+F 0 "U7" H 4520 3380 60  0000 C CNN
+F 1 "UCC27211" H 4520 3180 60  0000 C CNN
+F 2 "Package_SO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias" H 4770 2880 60  0001 C CNN
+F 3 "" H 4770 2880 60  0001 C CNN
+	1    4520 3280
+	1    0    0    -1  
+$EndComp
+$Comp
+L irfb4020:IRFB4020 Q3
+U 1 1 5BE3038F
+P 5780 2780
+F 0 "Q3" H 6030 2855 50  0000 L CNN
+F 1 "IRFB4020" H 6030 2780 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6030 2705 50  0001 L CIN
+F 3 "" H 5780 2780 50  0001 L CNN
+	1    5780 2780
+	1    0    0    -1  
+$EndComp
+$Comp
+L irfb4020:IRFB4020 Q4
+U 1 1 5BE30472
+P 5780 3730
+F 0 "Q4" H 6030 3805 50  0000 L CNN
+F 1 "IRFB4020" H 6030 3730 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6030 3655 50  0001 L CIN
+F 3 "" H 5780 3730 50  0001 L CNN
+	1    5780 3730
+	1    0    0    -1  
+$EndComp
+$Comp
+L classD-rescue:C-classD_0_6-rescue C29
+U 1 1 5BE42B46
+P 6810 3280
+F 0 "C29" H 6835 3380 50  0000 L CNN
+F 1 "100n/100V" H 6510 3170 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6848 3130 50  0001 C CNN
+F 3 "" H 6810 3280 50  0001 C CNN
+	1    6810 3280
+	1    0    0    -1  
+$EndComp
+$Comp
+L classD-rescue:C-classD_0_6-rescue C31
+U 1 1 5BE42E3B
+P 7060 3280
+F 0 "C31" H 7085 3380 50  0000 L CNN
+F 1 "1u/100V" H 7085 3180 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7098 3130 50  0001 C CNN
+F 3 "" H 7060 3280 50  0001 C CNN
+	1    7060 3280
+	1    0    0    -1  
+$EndComp
+$Comp
+L classD-rescue:C-classD_0_6-rescue C27
+U 1 1 5BE42ECA
+P 5520 3180
+F 0 "C27" H 5545 3280 50  0000 L CNN
+F 1 "2.2u/63V" H 5545 3080 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5558 3030 50  0001 C CNN
+F 3 "" H 5520 3180 50  0001 C CNN
+	1    5520 3180
+	0    1    1    0   
+$EndComp
+$Comp
+L classD-rescue:R-classD_0_6-rescue R6
+U 1 1 5BE42FBD
+P 6420 2120
+F 0 "R6" V 6500 2120 50  0000 C CNN
+F 1 "20m/(1-2W)" V 6300 2140 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 6350 2120 50  0001 C CNN
+F 3 "" H 6420 2120 50  0001 C CNN
+	1    6420 2120
+	1    0    0    -1  
+$EndComp
+$Comp
+L classD-rescue:C-classD_0_6-rescue C24
+U 1 1 5BE430CC
+P 3200 3280
+F 0 "C24" H 3225 3380 50  0000 L CNN
+F 1 "100n" H 3225 3180 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3238 3130 50  0001 C CNN
+F 3 "" H 3200 3280 50  0001 C CNN
+	1    3200 3280
+	1    0    0    -1  
+$EndComp
+Text HLabel 3770 3180 0    60   Input ~ 0
+LOG_H
+Text HLabel 3770 3380 0    60   Input ~ 0
+LOG_L
+$Comp
+L power:GND #PWR041
+U 1 1 5BE43C3B
+P 3200 3650
+F 0 "#PWR041" H 3200 3400 50  0001 C CNN
+F 1 "GND" H 3200 3500 50  0000 C CNN
+F 2 "" H 3200 3650 50  0001 C CNN
+F 3 "" H 3200 3650 50  0001 C CNN
+	1    3200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR042
+U 1 1 5BE43C69
+P 3200 2900
+F 0 "#PWR042" H 3200 2750 50  0001 C CNN
+F 1 "+12V" H 3200 3040 50  0000 C CNN
+F 2 "" H 3200 2900 50  0001 C CNN
+F 3 "" H 3200 2900 50  0001 C CNN
+	1    3200 2900
+	1    0    0    -1  
+$EndComp
+Text HLabel 6160 3280 2    60   Output ~ 0
+HPWM-
+$Comp
+L power:GND #PWR043
+U 1 1 5BE44FBC
+P 6370 4090
+F 0 "#PWR043" H 6370 3840 50  0001 C CNN
+F 1 "GND" H 6370 3940 50  0000 C CNN
+F 2 "" H 6370 4090 50  0001 C CNN
+F 3 "" H 6370 4090 50  0001 C CNN
+	1    6370 4090
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2930 2980 3200 2980
+Wire Wire Line
+	3200 2900 3200 2980
+Wire Wire Line
+	3200 3430 3200 3580
+Wire Wire Line
+	2930 3580 3200 3580
+Connection ~ 3200 2980
+Connection ~ 3200 3580
+Wire Wire Line
+	5880 3380 5270 3380
+Wire Wire Line
+	5580 3730 5270 3730
+Wire Wire Line
+	5270 3730 5270 3580
+Wire Wire Line
+	5270 2980 5270 2780
+Wire Wire Line
+	5270 2780 5580 2780
+Wire Wire Line
+	5880 2980 5880 3180
+Connection ~ 5880 3380
+Wire Wire Line
+	6160 3280 5880 3280
+Connection ~ 5880 3280
+Connection ~ 5880 3180
+Wire Wire Line
+	5670 3180 5880 3180
+Wire Wire Line
+	5370 3180 5270 3180
+Wire Wire Line
+	5880 2580 5880 2390
+Wire Wire Line
+	5880 2390 6420 2390
+Wire Wire Line
+	6940 2390 6940 2980
+Wire Wire Line
+	6810 2980 6940 2980
+Wire Wire Line
+	6810 2980 6810 3130
+Wire Wire Line
+	7060 2980 7060 3130
+Connection ~ 6940 2980
+Wire Wire Line
+	6810 3430 6810 3550
+Wire Wire Line
+	6810 3550 6940 3550
+Wire Wire Line
+	7060 3550 7060 3430
+Wire Wire Line
+	6940 4010 6940 3550
+Wire Wire Line
+	5880 4010 6370 4010
+Wire Wire Line
+	5880 4010 5880 3930
+Connection ~ 6940 3550
+Wire Wire Line
+	6370 4090 6370 4010
+Connection ~ 6370 4010
+Wire Wire Line
+	2930 3130 2930 2980
+Wire Wire Line
+	2930 3430 2930 3580
+Wire Wire Line
+	6420 2270 6420 2390
+Connection ~ 6420 2390
+Wire Wire Line
+	7060 1790 6420 1790
+Wire Wire Line
+	6420 1700 6420 1790
+Text HLabel 7060 1790 2    60   Output ~ 0
+SENSEH
+Text HLabel 7060 2390 2    60   Output ~ 0
+SENSEL
+Connection ~ 6940 2390
+$Comp
+L UCC27211:UCC27211 U6
+U 1 1 5BE47AB1
+P 4480 5490
+F 0 "U6" H 4480 5590 60  0000 C CNN
+F 1 "UCC27211" H 4480 5390 60  0000 C CNN
+F 2 "Package_SO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias" H 4730 5090 60  0001 C CNN
+F 3 "" H 4730 5090 60  0001 C CNN
+	1    4480 5490
+	1    0    0    -1  
+$EndComp
+$Comp
+L irfb4020:IRFB4020 Q1
+U 1 1 5BE47AB7
+P 5740 4990
+F 0 "Q1" H 5990 5065 50  0000 L CNN
+F 1 "IRFB4020" H 5990 4990 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5990 4915 50  0001 L CIN
+F 3 "" H 5740 4990 50  0001 L CNN
+	1    5740 4990
+	1    0    0    -1  
+$EndComp
+$Comp
+L irfb4020:IRFB4020 Q2
+U 1 1 5BE47ABD
+P 5740 5940
+F 0 "Q2" H 5990 6015 50  0000 L CNN
+F 1 "IRFB4020" H 5990 5940 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5990 5865 50  0001 L CIN
+F 3 "" H 5740 5940 50  0001 L CNN
+	1    5740 5940
+	1    0    0    -1  
+$EndComp
+$Comp
+L classD-rescue:C-classD_0_6-rescue C28
+U 1 1 5BE47AC3
+P 6770 5490
+F 0 "C28" H 6795 5590 50  0000 L CNN
+F 1 "100n/100V" H 6520 5380 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6808 5340 50  0001 C CNN
+F 3 "" H 6770 5490 50  0001 C CNN
+	1    6770 5490
+	1    0    0    -1  
+$EndComp
+$Comp
+L classD-rescue:C-classD_0_6-rescue C30
+U 1 1 5BE47AC9
+P 7020 5490
+F 0 "C30" H 7045 5590 50  0000 L CNN
+F 1 "1u/100V" H 7045 5390 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7058 5340 50  0001 C CNN
+F 3 "" H 7020 5490 50  0001 C CNN
+	1    7020 5490
+	1    0    0    -1  
+$EndComp
+$Comp
+L classD-rescue:C-classD_0_6-rescue C26
+U 1 1 5BE47ACF
+P 5480 5390
+F 0 "C26" H 5505 5490 50  0000 L CNN
+F 1 "2.2u/63V" H 5505 5290 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5518 5240 50  0001 C CNN
+F 3 "" H 5480 5390 50  0001 C CNN
+	1    5480 5390
+	0    1    1    0   
+$EndComp
+$Comp
+L classD-rescue:C-classD_0_6-rescue C25
+U 1 1 5BE47AD5
+P 3200 5490
+F 0 "C25" H 3225 5590 50  0000 L CNN
+F 1 "100n" H 3225 5390 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3238 5340 50  0001 C CNN
+F 3 "" H 3200 5490 50  0001 C CNN
+	1    3200 5490
+	1    0    0    -1  
+$EndComp
+Text HLabel 3730 5390 0    60   Input ~ 0
+LOG_L
+Text HLabel 3730 5590 0    60   Input ~ 0
+LOG_H
+$Comp
+L power:GND #PWR044
+U 1 1 5BE47ADD
+P 3200 5860
+F 0 "#PWR044" H 3200 5610 50  0001 C CNN
+F 1 "GND" H 3200 5710 50  0000 C CNN
+F 2 "" H 3200 5860 50  0001 C CNN
+F 3 "" H 3200 5860 50  0001 C CNN
+	1    3200 5860
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR045
+U 1 1 5BE47AE3
+P 3200 5110
+F 0 "#PWR045" H 3200 4960 50  0001 C CNN
+F 1 "+12V" H 3200 5250 50  0000 C CNN
+F 2 "" H 3200 5110 50  0001 C CNN
+F 3 "" H 3200 5110 50  0001 C CNN
+	1    3200 5110
+	1    0    0    -1  
+$EndComp
+Text HLabel 6120 5490 2    60   Output ~ 0
+HPWM+
+$Comp
+L power:GND #PWR046
+U 1 1 5BE47AEA
+P 6330 6300
+F 0 "#PWR046" H 6330 6050 50  0001 C CNN
+F 1 "GND" H 6330 6150 50  0000 C CNN
+F 2 "" H 6330 6300 50  0001 C CNN
+F 3 "" H 6330 6300 50  0001 C CNN
+	1    6330 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2930 5190 3200 5190
+Wire Wire Line
+	3200 5110 3200 5190
+Wire Wire Line
+	3200 5640 3200 5790
+Wire Wire Line
+	2930 5790 3200 5790
+Connection ~ 3200 5190
+Connection ~ 3200 5790
+Wire Wire Line
+	5840 5590 5230 5590
+Wire Wire Line
+	5540 5940 5230 5940
+Wire Wire Line
+	5230 5940 5230 5790
+Wire Wire Line
+	5230 5190 5230 4990
+Wire Wire Line
+	5230 4990 5540 4990
+Wire Wire Line
+	5840 5190 5840 5390
+Connection ~ 5840 5590
+Wire Wire Line
+	6120 5490 5840 5490
+Connection ~ 5840 5490
+Connection ~ 5840 5390
+Wire Wire Line
+	5630 5390 5840 5390
+Wire Wire Line
+	5330 5390 5230 5390
+Wire Wire Line
+	5840 4790 5840 4600
+Wire Wire Line
+	5840 4600 6900 4600
+Wire Wire Line
+	6900 4600 6900 5190
+Wire Wire Line
+	6770 5190 6900 5190
+Wire Wire Line
+	6770 5190 6770 5340
+Wire Wire Line
+	7020 5190 7020 5340
+Connection ~ 6900 5190
+Wire Wire Line
+	6770 5640 6770 5760
+Wire Wire Line
+	6770 5760 6900 5760
+Wire Wire Line
+	7020 5760 7020 5640
+Wire Wire Line
+	6900 6220 6900 5760
+Wire Wire Line
+	5840 6220 6330 6220
+Wire Wire Line
+	5840 6220 5840 6140
+Connection ~ 6900 5760
+Wire Wire Line
+	6330 6300 6330 6220
+Connection ~ 6330 6220
+Wire Wire Line
+	2930 5340 2930 5190
+Wire Wire Line
+	2930 5640 2930 5790
+Text HLabel 7020 4600 2    60   Output ~ 0
+SENSEL
+Connection ~ 6900 4600
+$Comp
+L power:+48V #PWR047
+U 1 1 5BE481E7
+P 6420 1700
+F 0 "#PWR047" H 6420 1550 50  0001 C CNN
+F 1 "+48V" H 6420 1840 50  0000 C CNN
+F 2 "" H 6420 1700 50  0001 C CNN
+F 3 "" H 6420 1700 50  0001 C CNN
+	1    6420 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6420 1790
+$Comp
+L classD-rescue:CP-classD_0_6-rescue C22
+U 1 1 5C0A8030
+P 2930 3280
+F 0 "C22" H 2955 3380 50  0000 L CNN
+F 1 "100u/25V" H 2955 3180 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 2968 3130 50  0001 C CNN
+F 3 "" H 2930 3280 50  0001 C CNN
+	1    2930 3280
+	1    0    0    -1  
+$EndComp
+$Comp
+L classD-rescue:CP-classD_0_6-rescue C23
+U 1 1 5C0A820D
+P 2930 5490
+F 0 "C23" H 2955 5590 50  0000 L CNN
+F 1 "100u/25V" H 2955 5390 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 2968 5340 50  0001 C CNN
+F 3 "" H 2930 5490 50  0001 C CNN
+	1    2930 5490
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2980 3770 2980
+Wire Wire Line
+	3200 2980 3200 3130
+Wire Wire Line
+	3200 3580 3200 3650
+Wire Wire Line
+	3200 3580 3770 3580
+Wire Wire Line
+	5880 3380 5880 3530
+Wire Wire Line
+	5880 3280 5880 3380
+Wire Wire Line
+	5880 3180 5880 3280
+Wire Wire Line
+	6940 2980 7060 2980
+Wire Wire Line
+	6940 3550 7060 3550
+Wire Wire Line
+	6370 4010 6940 4010
+Wire Wire Line
+	6420 2390 6940 2390
+Wire Wire Line
+	6940 2390 7060 2390
+Wire Wire Line
+	3200 5190 3730 5190
+Wire Wire Line
+	3200 5190 3200 5340
+Wire Wire Line
+	3200 5790 3200 5860
+Wire Wire Line
+	3200 5790 3730 5790
+Wire Wire Line
+	5840 5590 5840 5740
+Wire Wire Line
+	5840 5490 5840 5590
+Wire Wire Line
+	5840 5390 5840 5490
+Wire Wire Line
+	6900 5190 7020 5190
+Wire Wire Line
+	6900 5760 7020 5760
+Wire Wire Line
+	6330 6220 6900 6220
+Wire Wire Line
+	6900 4600 7020 4600
+Wire Wire Line
+	6420 1790 6420 1970
+Wire Wire Line
+	4370 3830 3770 3830
+Wire Wire Line
+	3770 3830 3770 3580
+Connection ~ 3770 3580
+Wire Wire Line
+	4330 6040 3730 6040
+Wire Wire Line
+	3730 6040 3730 5790
+Connection ~ 3730 5790
+$EndSCHEMATC

@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LT6118
+D Current Sense Amplifier, Reference and Comparator with POR
+F https://www.analog.com/media/en/technical-documentation/data-sheets/6118f.pdf
+$ENDCMP
+#
+#End Doc Library

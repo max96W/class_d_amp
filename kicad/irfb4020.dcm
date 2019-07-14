@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRFB4020
+D Digital Audio MOSFET, 18 A, 200 V
+K N-Channel Power MOSFET
+F https://www.infineon.com/dgdl/irfb4020pbf.pdf?fileId=5546d462533600a4015356158ffd1e05
+$ENDCMP
+#
+#End Doc Library

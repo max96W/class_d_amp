@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SN74LVC2G86
+D Dual 2 input XOR
+K TTL XOR2
+F http://www.ti.com/lit/ds/symlink/sn74lvc2g86.pdf
+$ENDCMP
+#
+#End Doc Library
